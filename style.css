@@ -18,7 +18,6 @@ html{
 
 body{
     width: 100%;
-    height: 100vh;
     overflow-x: hidden;
     background-color: black;
     color: white;
@@ -26,6 +25,17 @@ body{
     flex-direction: column;
     margin: 0 auto;
 }
+
+section{
+    width: 100%;
+    height: max-content;
+}
+
+
+
+
+
+
 
 header{
     position: fixed;
@@ -88,6 +98,10 @@ header{
     margin-top: 5rem;
 }
 
+.nav-kontakt{
+    margin-bottom: 1rem;
+}
+
 .hamburger{
     display: flex;
     flex-direction: column;
@@ -114,10 +128,12 @@ header{
     display: block;
 }
 
-section{
-    min-height: 100vh;
-    width: 100%;
-}
+
+
+
+
+
+
 
 .home{
     background-image: url(Satoru_Gojo_arrives_on_the_battlefield_29.webp);
@@ -132,6 +148,7 @@ section{
     align-items: center;
     padding-top: 15rem;
     padding-bottom: 6rem;
+    min-height: 100vh;
 }
 
 .home-content{
@@ -140,13 +157,14 @@ section{
     background-color: black;
     position: relative;
     box-shadow: 0px 0px 5px cyan;
-    padding: 1rem;
+    padding: 2rem;
+    width: max-content;
 }
 
 .home-content h1{
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 700;
-
+    width: max-content;
 }
 
 span{
@@ -158,7 +176,7 @@ span{
 }
 
 .home-content h3{
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     font-weight: 700;
 }
@@ -186,7 +204,7 @@ span{
     border-radius: 50%;
     transition: 0.3 ease;
     color: cyan;
-    margin: 40px 36px 40px 40px;
+    margin: 40px 40px 40px 40px;
 }
 
 .social-icons a:hover{
@@ -199,11 +217,12 @@ span{
 .typing-text{
     font-size: 34px;
     font-weight: 600;
-    min-width: 550px;
+    width: max-content;
 }
 
 .typing text span{
     position: relative;
+    width: max-content;
 }
 
 .typing-text span::before{
@@ -244,26 +263,15 @@ span{
     }
 }
 
-footer{
-    background-color: rgb(40, 40, 40);
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    display: block;
-    padding: 7rem;
-}
 
-.textdole{
-    font-size: 2rem;
-}
 
-span a{
-    color: rgb(177, 182, 255);
-}
+
+
+
+
+
 
 .content{
-    width: 80%;
     margin: 0px auto;
 }
 
@@ -280,25 +288,67 @@ span a{
     margin: 10rem;
 }
 
-.about-details img{
-    width: 480px;
-    height: 480px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
+
+
+
+
+
+
+
+
+
+
+.content-omne{
+    margin: 3rem;
 }
 
-.about-details img{
+.img-omne{
     width: 480px;
     height: 480px;
     border-radius: 50%;
-    justify-content: center;
-    align-items: center;
+    margin: 3rem 0 3rem 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s ease;
+}
+
+.img-omne:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px cyan;
 }
 
 .about-details{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.left{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.right{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.zajmy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .content{
@@ -342,7 +392,7 @@ span a{
         border: 1px solid black;
         background-color: cyan;
         color: black;
-        margin-top: 0;
+        margin-top: 1rem;
     }
 }
 
@@ -352,14 +402,14 @@ span a{
     width: 3rem;
     height: 3rem;
     font-size: 1.5rem;
-    justify-content: center;
-    align-items: center;
     display: block;
-    text-align: center;
     color: cyan;
     background-color: black;
     transition: 0.5s ease;
     margin-top: 6rem;
+    margin-left: 6rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .topic{
@@ -371,6 +421,50 @@ span a{
 .box p{
     color: black;
     font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.kontakt{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+span a{
+    color: rgb(177, 182, 255);
+}
+
+footer{
+    background-color: rgb(40, 40, 40);
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: block;
+    padding: 7rem;
+}
+
+.textdole{
+    font-size: 2rem;
 }
 
 .social-icons-footer a{
@@ -412,7 +506,6 @@ span a{
     
     body{
         width: 100%;
-        height: 100vh;
         overflow-x: hidden;
         background-color: black;
         color: white;
@@ -435,6 +528,15 @@ span a{
         border: 0.5px solid black;
     }
     
+    section{
+        width: 100%;
+        height: max-content;
+    }
+    
+    
+    
+    
+    
     header{
         position: fixed;
         top: 0;
@@ -442,6 +544,7 @@ span a{
         width: 100%;
         background-color: rgb(40, 40, 40);
         z-index: 100;
+        padding: 4rem;
     }
    
     .logo{
@@ -474,12 +577,11 @@ span a{
         height: 100%;
         align-items: center;
         flex-direction: row;
-        justify-content: space-between;
     }
     
     .divlogo{
         display: inline-flex;
-        margin-right: 55rem;
+        margin-right: 80rem;
     }
     
     .nav-container .navigace{
@@ -518,10 +620,12 @@ span a{
         margin-right: 0;
     }
 
-    section{
-        min-height: 100vh;
-        padding: 5rem;
-    }
+    
+    
+    
+    
+    
+    
     
     .home{
         justify-content: space-between;
@@ -593,7 +697,7 @@ span a{
         border-radius: 50%;
         transition: 0.3 ease;
         color: cyan;
-        margin: 40px 36px 40px 40px;
+        margin: 40px 40px 40px 40px;
     }
     
     .social-icons a:hover{
@@ -629,6 +733,17 @@ span a{
         animation: cursor 0.8s infinite;
         
     }
+
+
+
+
+
+
+   .title{
+        display: flex;
+        justify-content: center;
+        margin: 5rem;
+    }
     
     .content{
         width: 80%;
@@ -642,24 +757,30 @@ span a{
         border-bottom: 3px solid cyan;
     }
     
-    .title{
-        display: flex;
-        justify-content: center;
-        margin: 5rem;
-    }
-    
-    .about-details img{
-        width: 480px;
-        height: 480px;
-        border-radius: 50%;
-        justify-content: center;
-        align-items: center;
+ 
+
+
+
+              
+
+    .img-omne{
+    width: 1000px;
+    height: 50vh;
+    border-radius: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     }
 
     .about-details{
         display: flex;
         justify-content: center;
     }
+
+
+
+
+
+
 
     .boxes{
         display: flex;
@@ -713,6 +834,7 @@ span a{
         background-color: black;
         transition: 0.8s ease;
         margin-top: 12rem;
+        margin-left: 0;
     }
 
     .topic{
