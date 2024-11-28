@@ -6,7 +6,6 @@
     box-sizing: border-box;
     text-decoration: none;
     border: none;
-    outline: none;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
@@ -17,17 +16,16 @@ html{
 }
 
 body{
-    width: 100%;
     overflow-x: hidden;
     background-color: black;
     color: white;
     display: flex;
+    outline: none;
     flex-direction: column;
     margin: 0 auto;
 }
 
 section{
-    width: 100%;
     height: max-content;
 }
 
@@ -158,13 +156,12 @@ header{
     position: relative;
     box-shadow: 0px 0px 5px cyan;
     padding: 2rem;
-    width: max-content;
+    min-width: auto;
 }
 
 .home-content h1{
     font-size: 5rem;
     font-weight: 700;
-    width: max-content;
 }
 
 span{
@@ -185,11 +182,16 @@ span{
     border: 2px solid cyan;
     background-color: black;
     border-radius: 4rem;
-    width: max-content;
-    height: max-content;
-    position: static;
+    position: relative;
+    max-width: max-content;
     box-shadow: 0px 0px 5px cyan;
     display: block;
+}
+
+@media(max-width:451px){
+    .social-icons{
+        max-width: 20rem;
+    }
 }
 
 .social-icons a{
@@ -204,7 +206,16 @@ span{
     border-radius: 50%;
     transition: 0.3 ease;
     color: cyan;
-    margin: 40px 40px 40px 40px;
+    margin: 40px;
+}
+
+@media(max-width:551px){
+    .social-icons a{
+        width: 35px;
+        height: 35px;
+        font-size: 1.5rem;
+        margin: 30px;
+    }
 }
 
 .social-icons a:hover{
@@ -222,7 +233,6 @@ span{
 
 .typing text span{
     position: relative;
-    width: max-content;
 }
 
 .typing-text span::before{
@@ -235,8 +245,8 @@ span{
     content: "";
     background-color: black;
     position: absolute;
-    height: 15%;
-    border-left: 3px solid black;
+    height: 4rem;
+    border-right: 3px solid black;
     right: -8;
     animation: cursor 0.8s infinite;
     
@@ -303,14 +313,18 @@ span{
 }
 
 .img-omne{
-    width: 480px;
-    height: 480px;
+    width: 48rem;
     border-radius: 50%;
     margin: 3rem 0 3rem 0;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     transition: 1s ease;
+}
+
+@media(max-width:535px){
+    .img-omne{
+        width: 30rem;
+    }
 }
 
 .img-omne:hover{
@@ -331,6 +345,50 @@ span{
 
 .right{
     text-align: center;
+    font-size: 1.7rem;
+}
+
+
+
+
+
+
+.content-vzdelani{
+    padding: 3rem;
+}
+
+.whole-ladovka img{
+    max-width: 32rem;
+    float: left;
+    border: 3px solid cyan;
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+
+.whole-ladovka{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20rem;
+}
+
+.text-ladovka{
+    font-size: 1.7rem;
+}
+
+.whole-kladenka img{
+    max-width: 32rem;
+    float: right;
+    border: 3px solid cyan;
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+
+.whole-kladenka{
+    justify-content: center;
+    align-items: center;
+}
+
+.text-kladenka{
     font-size: 1.7rem;
 }
 
@@ -647,7 +705,7 @@ footer{
         position: relative;
         box-shadow: 0px 0px 5px cyan;
         display: inline-block;
-        width: max-content;
+        max-width: max-content;
         height: max-content;
     }
     
@@ -675,7 +733,7 @@ footer{
         border: 2px solid cyan;
         background-color: black;
         border-radius: 4rem;
-        width: max-content;
+        max-width: max-content;
         height: max-content;
         box-shadow: 0px 0px 5px cyan;
         display: flex;
