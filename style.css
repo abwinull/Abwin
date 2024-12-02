@@ -225,10 +225,16 @@ span{
     box-shadow: 0 0 25px cyan;
 }
 
-.typing-text{
-    font-size: 34px;
-    font-weight: 600;
-    width: max-content;
+.typing-text {
+    font-size: 28px;
+    min-width: 400px;
+}
+
+@media (max-width: 480px) {
+    .typing-text {
+        font-size: 22px;
+        min-width: 300px;
+    }
 }
 
 .typing text span{
@@ -423,6 +429,12 @@ span{
 .boxes-dva{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 5rem;
+}
+
+.boxes-tri{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .box{
@@ -430,11 +442,13 @@ span{
     width: 15rem;
     justify-content: center;
     background-color: black;
-    transition: 0.5s ease;
+    transition: 1s ease;
     color: cyan;
     text-align: center;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .box:hover{
@@ -445,13 +459,29 @@ span{
     background-color: cyan;
     justify-content: center;
     text-align: center;
-    
-    .icon{
-        border: 1px solid black;
-        background-color: cyan;
-        color: black;
-        margin-top: 1rem;
-    }
+    display: flex;
+    flex-direction: column;
+}
+
+.box:hover .icon{
+    border: 1px solid black;
+    background-color: cyan;
+    color: black;
+    margin-top: -8rem;
+}
+
+.box:hover .topic{
+    color: black;
+    font-size: 1.5rem;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box:hover p{
+    color: black;
+    font-size: 1rem;
+    display: block;
 }
 
 .icon{
@@ -460,27 +490,21 @@ span{
     width: 3rem;
     height: 3rem;
     font-size: 1.5rem;
-    display: block;
+    display: flex;
     color: cyan;
     background-color: black;
     transition: 0.5s ease;
-    margin-top: 6rem;
-    margin-left: 6rem;
     justify-content: center;
     align-items: center;
 }
 
 .topic{
-    color: black;
-    font-size: 1.5rem;
-    margin: 10px;
+    display: none;
 }
 
 .box p{
-    color: black;
-    font-size: 1rem;
+    display: none;
 }
-
 
 
 
@@ -875,7 +899,7 @@ footer{
             border: 1px solid black;
             background-color: cyan;
             color: black;
-            margin-top: 0;
+            margin-top: 1px;
         }
     }
 
@@ -891,8 +915,6 @@ footer{
         color: cyan;
         background-color: black;
         transition: 0.8s ease;
-        margin-top: 12rem;
-        margin-left: 0;
     }
 
     .topic{
