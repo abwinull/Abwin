@@ -136,16 +136,23 @@
         </section>
 
         <section class="kontakt" id="kontakt">
-            <div class="content">
+            <div class="content-form">
                 <div class="title">
                     <span>Kontaktuj mě</span>
                 </div>
                 <div class="text">
-                    <div class="topic">Máš nějaký nápad?</div>
-                    <p>bla bla bla bla bla bla bla bla</p>
-                    <div class="button">
-                        <button>Napiš mi</button>
-                    </div>
+                    <form action="https://formsubmit.co/abwinhry@gmail.com" method="POST">
+                        <label for="name">Tvoje jméno</label>
+                        <input type="text" id="name" name="name" required>
+        
+                        <label for="email">Tvoje e-mailová adresa</label>
+                        <input type="email" id="email" name="email" required>
+        
+                        <label for="message">Tvoje zpráva</label>
+                        <textarea id="message" name="message" required></textarea>
+        
+                        <button type="submit">Odeslat zprávu</button>
+                    </form>
                 </div>
             </div>
         </section>
