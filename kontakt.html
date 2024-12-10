@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="cs-cz">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="refresh" content="10">
+        <meta name="author" content="Ondřej Svoboda">
+        <title>Andrew's responsive web</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="nav-container">
+                    <div class="divlogo">
+                        <p class="logo">Ondra</p>
+                    </div>
+
+                    <div class="navigace" id="nav-list">
+                        <a href="domovska-stranka.html" class="domovska">Domovská stránka</a>
+                        <a href="o-mne.html">O mně</a>
+                        <a href="vzdelani.html">Vzdělání</a>
+                        <a href="zajmy.html">Zájmy</a>
+                        <a href="#" class="kontakt-active">Kontakt</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="kontakt" id="kontakt">
+            <div class="content-form">
+                <div class="title">
+                    <span>Kontaktuj mě</span>
+                </div>
+                <div class="text">
+                    <form action="https://formsubmit.co/abwinhry@gmail.com" method="POST">
+                        <label for="name">Tvoje jméno</label>
+                        <input type="text" id="name" name="name" required>
+        
+                        <label for="email">Tvoje e-mailová adresa</label>
+                        <input type="email" id="email" name="email" required>
+        
+                        <label for="message">Tvoje zpráva</label>
+                        <textarea id="message" name="message" required></textarea>
+        
+                        <button type="submit">Odeslat zprávu</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="textdole">
+                <div class="social-icons-footer">
+                    <a href="https://www.tiktok.com/@ondraxsvoboda"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@Abwinull"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://x.com/AbwiN_"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/ondraxsvoboda/?hl=cs"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <span>Created By
+                    <a href="#">Ondřej Svoboda</a>
+                 &#169; 2024 All Rights Reserved</span>
+            </div>
+        </footer>
+    </body>
+</html>
