@@ -86,18 +86,45 @@ header{
     padding: 1rem;
 }
 
-.navigace a:hover,
-.navigace a.active{
+.navigace a:hover{
     border-bottom: 0.5rem solid cyan;
     color: cyan;
 }
 
-.navigace a.active{
+.navigace .domovska{
     margin-top: 5rem;
 }
 
-.nav-kontakt{
+.navigace .domovska-active{
+    margin-top: 5rem;
+    border-bottom: 0.5rem solid cyan;
+    color: cyan;
+}
+
+.navigace .o-mne-active{
+    border-bottom: 0.5rem solid cyan;
+    color: cyan;
+}
+
+.navigace .vzdelani-active{
+    border-bottom: 0.5rem solid cyan;
+    color: cyan;
+}
+
+.navigace .zajmy-active{
+    border-bottom: 0.5rem solid cyan;
+    color: cyan;    
+}
+
+.navigace .kontakt-active{
+    border-bottom: 0.5rem solid cyan;
+    color: cyan;
     margin-bottom: 1rem;
+}
+
+.navigace .nav-kontakt{
+    margin-bottom: 1rem;
+    padding: 1rem;
 }
 
 .hamburger{
@@ -303,8 +330,8 @@ span{
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
 }
 
 
@@ -361,6 +388,10 @@ span{
 
 
 
+
+.vzdelani{
+    min-height: 100vh;
+}
 
 .content-vzdelani{
     padding: 3rem;
@@ -438,75 +469,45 @@ span{
 .boxes-tri{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 5rem;
 }
 
 .box{
     height: 20rem;
     width: 15rem;
     justify-content: center;
-    background-color: black;
+    background-color: cyan;
     transition: 1s ease;
     color: cyan;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.box:hover{
-    display: block;
-    width: 15rem;
-    height: 20rem;
-    border-radius: 5%;
-    background-color: cyan;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.box:hover .icon{
-    border: 1px solid black;
-    background-color: cyan;
-    color: black;
-    margin-top: -8rem;
-}
-
-.box:hover .topic{
-    color: black;
-    font-size: 1.5rem;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.box:hover p{
-    color: black;
-    font-size: 1rem;
-    display: block;
+    border-radius: 10px;
+    justify-content: flex-start;
 }
 
 .icon{
-    border: 1px solid cyan;
+    border: 1px solid black;
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
     font-size: 1.5rem;
     display: flex;
-    color: cyan;
-    background-color: black;
+    color: black;
+    background-color: cyan;
     transition: 0.5s ease;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .topic{
-    display: none;
+    color: black;
+    font-size: 1.3rem;
 }
 
 .box p{
-    display: none;
+    color: black;
 }
 
 
@@ -740,26 +741,27 @@ footer{
         width: max-content;
     }
 
-    .navigace a:hover,
-    .navigace a.active{
+    .navigace a:hover{
         border-bottom: 0.5rem solid cyan;
         color: cyan;
     }
 
-    .navigace a.active{
+    .navigace .domovska{
+        margin-top: 0;
+    }
+    
+    .navigace .domovska-active{
         margin-top: 0;
     }
 
-    nav .nav-container .navigace .nav-kontakt{
-        margin-right: 0;
-    }
+    
+    
+    
+    
+    
+    
 
-    
-    
-    
-    
-    
-    
+
     
     .home{
         justify-content: space-between;
@@ -876,7 +878,7 @@ footer{
    .title{
         display: flex;
         justify-content: center;
-        margin: 5rem;
+        margin: 15rem auto 5rem auto;
     }
     
     .content{
@@ -921,11 +923,13 @@ footer{
     .box{
         height: 30rem;
         width: 25rem;
-        justify-content: center;
+        justify-content: flex-start;
         background-color: transparent;
-        transition: 1s ease;
-        color: black;
+        transition: 0.4s ease;
+        color: transparent;
         text-align: center;
+        border-radius: 10%;
+        border: 3px solid cyan;
     }
 
     .box:hover{
@@ -933,19 +937,16 @@ footer{
         width: 25rem;
         height: 30rem;
         border-radius: 10%;
-        padding: 2rem;
         background-color: cyan;
-        justify-content: center;
-        text-align: center;
         display: flex;
         flex-direction: column;
+        transform: scale(1.05);
     }
 
     .box:hover .icon{
         border: 1px solid black;
         background-color: cyan;
         color: black;
-        margin-top: -14rem;
     }
 
     .icon{
@@ -954,40 +955,44 @@ footer{
         width: 40px;
         height: 40px;
         font-size: 2rem;
-        justify-content: center;
-        align-items: center;
         display: inline-flex;
         color: cyan;
         background-color: black;
-        transition: 0.8s ease;
+        transition: 0.4s ease;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
 
     .topic{
-        display: none;
+        color: cyan;
+        font-size: 1.5rem;
+        transition: 0.4s ease;
+        margin-bottom: 1rem;
     }
     
     .box p{
-        display: none;
+        color: cyan;
+        font-size: 1rem;
+        transition: 0.4s ease;
     }
 
     .box:hover .topic{
         color: black;
-        font-size: 1.5rem;
-        margin: 10px;
         display: flex;
         flex-direction: column;
     }
     
     .box:hover p{
         color: black;
-        font-size: 1rem;
         display: block;
     }
 
 
 
     
-    
+    .kontakt{
+        min-height: 100vh;
+    }
     
     .content {
         padding: 40px;
