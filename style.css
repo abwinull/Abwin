@@ -292,17 +292,20 @@ span{
 }
 
 @keyframes words{
-    0%, 25%{
+    0%, 20%{
         content: "Amatérský youtuber";
     }
-    26%, 50%{
+    21%, 40%{
         content: "Začínající kóder";
     }
-    51%, 75%{
-        content: "fotbalista";
+    41%, 60%{
+        content: "Fotbalista";
     }
-    76%, 100%{
-        content: "klasický puberťák";
+    61%, 80%{
+        content: "Klasický puberťák";
+    }
+    81%, 100%{
+        content: "Editor videí";
     }
 }
 
@@ -484,6 +487,8 @@ span{
     align-items: center;
     border-radius: 10px;
     justify-content: flex-start;
+    padding: 1rem;
+    text-align: center;
 }
 
 .icon{
@@ -503,11 +508,12 @@ span{
 
 .topic{
     color: black;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .box p{
     color: black;
+    font-size: 1.1rem;
 }
 
 
@@ -930,6 +936,7 @@ footer{
         text-align: center;
         border-radius: 10%;
         border: 3px solid cyan;
+        padding: 1rem;
     }
 
     .box:hover{
@@ -965,14 +972,14 @@ footer{
 
     .topic{
         color: cyan;
-        font-size: 1.5rem;
+        font-size: 2rem;
         transition: 0.4s ease;
         margin-bottom: 1rem;
     }
     
     .box p{
         color: cyan;
-        font-size: 1rem;
+        font-size: 1.5rem;
         transition: 0.4s ease;
     }
 
