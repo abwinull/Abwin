@@ -903,18 +903,18 @@ footer{
               
 
     .img-omne{
-    width: 1000px;
-    height: 50vh;
+    width: 500px;
+    height: 500px;
     border-radius: 100%;
     margin-top: 5rem;
     margin-bottom: 5rem;
     margin-right: 15rem;
     margin-left: 5rem;
+    display: block;
     }
 
-    .about-details{
+    .o-mne .about-details{
         display: flex;
-        justify-content: center;
         flex-direction: row;
     }
 
@@ -923,6 +923,7 @@ footer{
         text-align: center;
         align-items: center;
         margin-right: 5rem;
+        display: block;
     }
 
 
