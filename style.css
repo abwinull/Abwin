@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+/* obecné stylování celého dokumentu */
 *{
     margin: 0;
     padding: 0;
@@ -34,7 +35,7 @@ section{
 
 
 
-
+/* navigace a header */
 header{
     position: fixed;
     top: 0;
@@ -159,7 +160,7 @@ header{
 
 
 
-
+/* styl pro dokument index.html */
 .home{
     background-image: url(Satoru_Gojo_arrives_on_the_battlefield_29.webp);
     background-repeat: no-repeat;
@@ -191,9 +192,7 @@ header{
     font-weight: 700;
 }
 
-span{
-    color: cyan;
-}
+
 
 .omne{
     font-size: 2rem;
@@ -316,7 +315,7 @@ span{
 
 
 
-
+/* obecné stylování pro těchto pár třídních selektorů */
 .content{
     margin: 0px auto;
 }
@@ -337,6 +336,9 @@ span{
     margin-bottom: 5rem;
 }
 
+span{
+    color: cyan;
+}
 
 
 
@@ -345,8 +347,7 @@ span{
 
 
 
-
-
+/* styl pro dokument o-mne.html */
 .content-omne{
     margin: 3rem;
 }
@@ -354,10 +355,8 @@ span{
 .img-omne{
     width: 48rem;
     border-radius: 50%;
-    margin: 3rem 0 3rem 0;
-    margin-left: auto;
-    margin-right: auto;
     transition: 1s ease;
+    margin-bottom: 5rem;
 }
 
 @media(max-width:535px){
@@ -371,27 +370,24 @@ span{
     box-shadow: 0 0 30px cyan;
 }
 
-.about-details{
+.o-mne .about-details{
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-
-.left{
-    text-align: center;
-    font-size: 1.7rem;
+    align-items: center;
 }
 
 .right{
     text-align: center;
     font-size: 1.7rem;
+    margin-bottom: 5rem;
 }
 
 
 
 
 
-
+/* styl pro dokument vzdelani.html */
 .vzdelani{
     min-height: 100vh;
 }
@@ -444,7 +440,7 @@ span{
 
 
 
-
+/* styl pro dokument zajmy.html */
 .zajmy{
     display: flex;
     flex-direction: column;
@@ -524,7 +520,7 @@ span{
 
 
 
-
+/* styl pro dokument kontakt.html */
 .kontakt{
     padding: 20px;
 }
@@ -589,7 +585,7 @@ button:hover{
 
 
 
-
+/* styl pro patičku u všech dokumentů */
 span a{
     color: rgb(177, 182, 255);
 }
@@ -629,6 +625,7 @@ footer{
     box-shadow: 0 0 20px cyan;
 }
 
+/* styl pro responzivitu */
 @media(min-width:1000px){
     *{
         margin: 0;
@@ -911,11 +908,21 @@ footer{
     border-radius: 100%;
     margin-top: 5rem;
     margin-bottom: 5rem;
+    margin-right: 15rem;
+    margin-left: 5rem;
     }
 
     .about-details{
         display: flex;
         justify-content: center;
+        flex-direction: row;
+    }
+
+    .right{
+        justify-content: end;
+        text-align: center;
+        align-items: center;
+        margin-right: 5rem;
     }
 
 
