@@ -926,6 +926,10 @@ footer{
         display: block;
     }
 
+    .o-mne{
+        min-height: 100vh;
+    }
+
 
 
 
